@@ -1,0 +1,57 @@
+.hero{
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    padding-top: 5%;
+    mask-image: linear-gradient(to top, transparent, black 65%);
+    -weblit-mask-image: linear-gradient(to left, transparent, black 75%);
+}
+
+.hero-caption{
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0%;
+}
+
+.more-cards{
+    padding-left: 6%;
+}
+
+@media (max-width: 1024px){
+    .hero-caption .title-cards{
+        display: none;
+    }
+
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .hero-caption{
+        padding-left: 4%;
+    }
+
+    .hero-btns .btn img{
+        width: 20px;
+    }
+
+    .more-cards{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px){
+
+    .hero-btns .btn img{
+        width: 15px;
+    }
+
+    .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
