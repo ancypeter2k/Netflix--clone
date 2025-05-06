@@ -5,7 +5,7 @@ import Login from './Pages/Login/Login.jsx';
 import Player from './Pages/Player/Player.jsx';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase'; 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
     });
 
     return () => unsubscribe();
-  }, []);
+  },[]);
 
   return (
     <div>
